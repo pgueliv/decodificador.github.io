@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/fullblock_4905.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/resetcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>ENCRIPTACIÓN DE TEXTO</title>
+</head>
+<body class="fadeIn">
+    <section>
+        <div class="container">
+            <div class="encriptador">
+                <div class="encriptador__header">
+                    <div class="encriptador__header__imagen">
+                        <a href="https://www.aluracursos.com/" target="_blank"><img src="image/Logo@2x.png" alt="logoaura"  draggable="false"></a>
+                    </div>
+                    <div class="encriptador__header__icon">
+                        <button id="modeDark" class="encriptador__header__button"><i class="fas fa-adjust"></i></button>
+                    </div>
+                </div>
+                <div class="encriptador__box">
+                    <textarea class="encriptador__box__textarea textarea__color" name="text" id="textbox" cols="35" rows="20" placeholder="Ingrese el texto aquí"></textarea>
+                    <p class="encriptador__box__text"><i class="encriptador__box__icono fas fa-exclamation-circle"></i>Solo letras minúscula y sin acentos</p>
+                    <div class="encriptador__box__buttons">
+                        <button class="encriptador__box__buttons__button" id="encriptar">Encriptar</button>
+                        <button class="encriptador__box__buttons__button encriptador__box__buttons__button--modifier" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div id="card" class="card__box card__bcolor">
+                    <div class="card__box__content">
+                        <img class="card__box__content__photo" src="image/Muñeco.png" alt="muñeco" draggable="false">
+                        <h1 class="card__box__content__title" id="tituloDark">Ningún mensaje fue encontrado</h1>
+                        <p class="card__box__content__text" id="textoDark">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="card__box__result card__box__none">
+                        <p class="card__box__result__text" id="resultado"></p>
+                        <button class="card__box__result__button card__box__result__color" id="copy">Copia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <script src="./js/script.js"></script>
+</body>
+</html>
+
